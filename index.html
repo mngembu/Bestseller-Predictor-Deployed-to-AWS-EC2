@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predicting Bestseller Novels on Amazon.com</h1>
+  <p>(Enter 1 if Hardcover, or Kindle, or Mass Market Paperback, or Paperback. Else enter 0. Enter 0 for all four fields if an Audiobook)</p>
+  
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="rating" placeholder="Rating" required="required" />
+      <input type="text" name="customers_rated" placeholder="Customers_rated" required="required" />
+      <input type="text" name="price" placeholder="Price" required="required" />
+    	<input type="text" name="format_Hardcover" placeholder="Hardcover" required="required" />
+      <input type="text" name="format_Kindle" placeholder="Kindle" required="required" />
+		  <input type="text" name="format_Mass Market Paperback" placeholder="Mass Market Paperback" required="required" />
+      <input type="text" name="format_Paperback" placeholder="Paperback" required="required" />
+      
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
