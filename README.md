@@ -50,6 +50,13 @@ It involves: <br>
 - Matplotlib
 
 
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/56229226/194883632-ff211c29-585c-4669-8ae8-fb77d01d7170.png)
+
+![image](https://user-images.githubusercontent.com/56229226/194883879-54d2d8cb-51e4-47f6-9006-0794f6d45332.png)
+
+
 
 ## Contact
 
@@ -57,17 +64,6 @@ If you have any questions, feel free to reach out to me at ara.ngembu@yahoo.com.
 
 Author: Mary Ara Ngembu
 
-
-
-
-
-
-
-
-
-![image](https://user-images.githubusercontent.com/56229226/194883632-ff211c29-585c-4669-8ae8-fb77d01d7170.png)
-
-![image](https://user-images.githubusercontent.com/56229226/194883879-54d2d8cb-51e4-47f6-9006-0794f6d45332.png)
 
 
 
